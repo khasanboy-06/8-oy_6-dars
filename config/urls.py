@@ -22,8 +22,8 @@ from rest_framework import routers
 
 router = routers.SimpleRouter()
 router.register('hudud', HududAPIView, basename='hudud')
-router.register('qurilish_tashkilot', HududAPIView, basename='tashkilot')
-router.register('qurilish_bino', HududAPIView, basename='bino')
+router.register('qurilish_tashkilot', QurilishBinosiAPIView, basename='tashkilot')
+router.register('qurilish_bino', QurilishTashkilotiAPIView, basename='bino')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
